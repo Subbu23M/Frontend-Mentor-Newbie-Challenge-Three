@@ -1,0 +1,173 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Spartan',sans-serif;
+  background-color: white;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.first {
+  font-size: 35px;
+  font-weight: 700;
+  color: #502050;
+}
+
+.second {
+  font-size: 18px;
+  font-weight: 500;
+  color: #937b92;
+}
+
+@media only screen and (max-width: 600px) {
+  .first {
+    font-size: 25px;
+    text-align: center;
+  }
+  .second {
+    font-size: 15px;
+    text-align: center;
+    width: 75px auto;
+  }
+  .stars {
+    width: 350px;
+    height: 47px;
+    margin-top: 1rem;
+    text-align: center;
+    padding-bottom: 0.4rem;
+    background-color: #f7f2f7;
+    border-radius: 0.4rem;
+  }
+  .stars .fa-star {
+    font-size: 1rem;
+  }
+  .content h5 {
+    color: #937b92;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .first {
+    padding-top: 0.4rem;
+  }
+  .stars {
+    width: 450px;
+    height: 40px;
+    background-color: #f7f2f7;
+    border-radius: 0.4rem;
+    margin-top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .stars .fa-star {
+    font-size: 1.2rem;
+  }
+  .content h5 {
+    color: #937b92;
+  }
+  .stars-two {
+    margin-left: 2rem;
+  }
+  .stars-three {
+    margin-left: 4rem;
+  }
+}
+
+.team {
+  background-color: #502050;
+  border-radius: 0.5rem;
+}
+
+.team .profile {
+  width: 200px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2rem;
+}
+
+.team .profile .image img {
+  width: 50px;
+}
+
+.team .profile .details h5 {
+  color: white;
+}
+
+.team .profile .details span {
+  color: #ee68a4;
+}
+
+@media only screen and (min-width: 992px) {
+  .card-two {
+    margin-top: 4rem;
+  }
+  .card-three {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-two {
+    margin-top: 1rem;
+  }
+  .card-three {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bg-pattern-top-desktop {
+    /* position: absolute takes elements “out of flow” so its grid space gets collapsed. */
+    position: absolute;
+    top: -50px;
+    bottom: 50px;
+    left: 20px;
+  }
+  .bg-pattern-bottom-desktop {
+    /* position: absolute takes elements “out of flow” so its grid space gets collapsed. */
+    position: absolute;
+    top: 40px;
+    width: 700px;
+    right: 5px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bg-pattern-top-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-pattern-top-mobile {
+    /* position: absolute takes elements “out of flow” so its grid space gets collapsed. */
+    position: absolute;
+    top: 20px;
+    width: 350px;
+    /* z-index:stacks one on each other based on value  */
+    z-index: -1;
+  }
+  .bg-pattern-top-desktop, .bg-pattern-bottom-desktop {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,239 @@
+// Colors
+
+// hsl - hue, saturation and lightness
+
+$VeryDarkMagenta: hsl(300, 43%, 22%); 
+
+$SoftPink: hsl(333, 80%, 67%);
+
+$DarkGrayishMagenta: hsl(303, 10%, 53%);
+
+$LightGrayishMagenta: hsl(300, 24%, 96%);
+
+$White: hsl(0, 0%, 100%);
+
+// Universal Effects
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+    background-color: $White;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+.first{
+    font-size: 35px;
+    font-weight:700;
+    color: $VeryDarkMagenta;
+}
+
+.second{
+    font-size: 18px;
+    font-weight: 500;
+    color: $DarkGrayishMagenta;
+}
+
+// Media Queries
+// On XS screens
+@media only screen and (max-width:600px){
+    .first{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .second{
+        font-size: 15px;
+        text-align: center;
+        width: 75px auto;
+    }
+
+    .stars{
+        width: 350px;
+        height: 47px;
+        margin-top:1rem;
+        text-align: center;
+        padding-bottom: 0.4rem;
+        background-color: $LightGrayishMagenta;
+        border-radius: 0.4rem;
+
+        .fa-star{
+            font-size: 1rem;
+        }
+    }
+
+    .content {
+        h5 {
+            color: $DarkGrayishMagenta;
+            font-size: 1rem;
+        }
+    }
+}
+
+// Media Queries
+// On Lg screens
+@media only screen and (min-width:992px){
+
+    .first{
+        padding-top: 0.4rem;
+    }
+
+    .stars {
+        width: 450px;
+        height: 40px;
+        background-color: $LightGrayishMagenta;
+        border-radius: 0.4rem;
+        margin-top: 4rem;
+
+        // Convert column into row
+        display: flex;
+
+        // On Y-axis
+        align-items: center;
+
+        // On X-axis 
+        justify-content: space-around;
+
+        .fa-star {
+            font-size: 1.2rem;
+        }
+    }
+
+    .content {
+        h5 {
+            color: $DarkGrayishMagenta;
+        }
+    }
+
+    .stars-two{
+        margin-left: 2rem;
+    }
+
+    .stars-three{
+        margin-left: 4rem;
+    }
+
+}
+
+.team{
+    background-color: $VeryDarkMagenta;
+    border-radius: 0.5rem;
+    
+    .profile{
+        width: 200px;
+        height: 55px;
+
+        // Convert column into row
+        display: flex;
+
+        // On X-axis
+        justify-content: space-around;
+
+        // On Y-axis
+        align-items: center;
+
+        margin-left: 2rem;
+
+        .image{
+            img{
+                width: 50px;
+            }
+        }
+
+        .details{
+            h5{
+                color: $White;
+            }
+
+            span{
+                color: $SoftPink;
+            }
+        }
+
+    }
+
+}
+
+// Media Queries
+// On Lg screens
+@media only screen and (min-width:992px){
+
+    .card-two{
+        margin-top: 4rem;
+    }
+    
+    .card-three{
+        margin-top: 7rem;
+    }
+
+}
+
+// Media Queries
+// On XS screens
+@media only screen and (max-width:600px){
+
+    .card-two{
+        margin-top: 1rem;
+    }
+
+    .card-three{
+        margin-top: 1rem;
+    }
+
+}
+
+// Media Queries
+// On Lg screens
+@media only screen and (min-width:992px){
+
+    .bg-pattern-top-desktop{
+        /* position: absolute takes elements “out of flow” so its grid space gets collapsed. */
+        // so use top bottom left and right
+        position: absolute;
+
+        top: -50px;
+        bottom: 50px;
+        left: 20px;
+    }
+
+    .bg-pattern-bottom-desktop{
+        /* position: absolute takes elements “out of flow” so its grid space gets collapsed. */
+        // so use top bottom left and right
+        position: absolute;
+
+        top: 40px;
+        width: 700px;
+        right: 5px;
+    }
+}
+
+// Media Queries
+// On Lg screens
+@media only screen and (min-width:992px){
+    .bg-pattern-top-mobile{
+        display: none;
+    }
+}
+
+// Media Queries
+// On XS screens
+@media only screen and (max-width:600px){
+    .bg-pattern-top-mobile{
+        /* position: absolute takes elements “out of flow” so its grid space gets collapsed. */
+        // so use top bottom left and right
+        position: absolute;
+
+        top: 20px;
+        width: 350px;
+
+        /* z-index:stacks one on each other based on value  */
+        z-index: -1;
+    }
+
+    .bg-pattern-top-desktop,.bg-pattern-bottom-desktop{
+        display: none;
+    }
+}
